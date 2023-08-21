@@ -4,10 +4,10 @@
     "slug": "expoApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/normaldeer.jpeg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/largedeer.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,13 +18,19 @@
       "supportsTablet": true
     },
     "android": {
+      "config":{
+        "googleMaps":{
+          "apiKey":"rtyyy223"
+        }
+      },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/normaldeer.jpeg",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/tinydeer.jpeg",
+      "bundler": "metro"
     }
   }
 }
