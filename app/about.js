@@ -1,5 +1,6 @@
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 import { StyleSheet, Text, View } from "react-native";
+import { useRouter } from "expo-router";
 
 const About = () => {
   <>
@@ -18,6 +19,17 @@ const About = () => {
           <Text style={styles.heading}>To protect is to conserve...</Text>
           <Text style={styles.content}>
             Welcome to WildLife co. animal sanctuary
+          </Text>
+          <Text style={styles.address}>
+            Faculty of Engineering,Unilag ,Akoka, Lagos State.
+          </Text>
+          <Text
+            style={styles.back}
+            onPress={() => {
+              router.replace("/");
+            }}
+          >
+            GO HOME
           </Text>
         </View>
       </MapView>
@@ -52,6 +64,13 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     fontWeight: "bold",
     fontFamily: "Roboto-Regular",
+  },
+  back: {
+    paddingTop: 80,
+    alignSelf: "center",
+    fontWeight: "bold",
+    fontFamily: "Roboto-Regular",
+    textDecorationLine: "underline",
   },
 });
 export default About;

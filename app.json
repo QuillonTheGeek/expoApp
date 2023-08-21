@@ -2,6 +2,7 @@
   "expo": {
     "name": "expoApp",
     "slug": "expoApp",
+    "scheme": "myapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/normaldeer.jpeg",
@@ -18,9 +19,9 @@
       "supportsTablet": true
     },
     "android": {
-      "config":{
-        "googleMaps":{
-          "apiKey":"rtyyy223"
+      "config": {
+        "googleMaps": {
+          "apiKey": "rtyyy223"
         }
       },
       "adaptiveIcon": {
@@ -31,6 +32,9 @@
     "web": {
       "favicon": "./assets/images/tinydeer.jpeg",
       "bundler": "metro"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
